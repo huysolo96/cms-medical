@@ -1,0 +1,17 @@
+<div *ngIf="formGroup" [formGroup]="formGroup">
+    <mat-form-field class="w-100">
+        <input matInput placeholder="Mã" formControlName="sku">
+    </mat-form-field>
+    <mat-form-field class="w-100">
+        <input matInput placeholder="Tên thuốc" formControlName="name">
+    </mat-form-field>
+    <mat-form-field class="w-100">
+        <input matInput placeholder="Triệu chứng" formControlName="symptom">
+    </mat-form-field>
+    <mat-form-field class="w-100">
+        <input matInput placeholder="Giá" formControlName="price" type="number">
+    </mat-form-field>
+    <mat-form-field class="w-100">
+        <input matInput placeholder="Thành phần" formControlName="ingredient">
+    </mat-form-field>
+</div>

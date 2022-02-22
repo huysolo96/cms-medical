@@ -1,0 +1,8 @@
+<h1 mat-dialog-title>{{data.label}}</h1>
+<div mat-dialog-content>
+  <ng-template #editContent></ng-template>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button (click)="onClose()">Hủy</button>
+  <button mat-raised-button color="primary" [disabled]="invalid$ | async" (click)="onSubmitForm()" cdkFocusInitial>Lưu</button>
+</div>

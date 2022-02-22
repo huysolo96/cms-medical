@@ -1,0 +1,20 @@
+<div *ngIf="formGroup" [formGroup]="formGroup">
+    <mat-form-field class="w-100">
+        <mat-select placeholder="Vai trò" formControlName="type" >
+            <mat-option value="SPECIALIST">
+                Chuyên gia
+            </mat-option>
+            <mat-option value="USER">
+                Người dùng
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="w-100">
+        <mat-select placeholder="Nhóm bệnh" formControlName="diseaseCategories" multiple="true">
+            <mat-option [value]="desease.id" *ngFor="let desease of deseases$ | async">
+                {{desease.name}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>

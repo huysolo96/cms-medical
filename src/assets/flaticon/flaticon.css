@@ -1,0 +1,63 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 06/07/2019 11:52
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+  word-wrap: normal;
+  direction: ltr;
+  font-style: normal;
+}
+
+.flaticon-heart:before { content: "\f100"; }
+.flaticon-medical:before { content: "\f101"; }
+.flaticon-medicine:before { content: "\f102"; }
+.flaticon-heart-1:before { content: "\f103"; }
+.flaticon-brain:before { content: "\f104"; }
+.flaticon-scope:before { content: "\f105"; }
+.flaticon-pet:before { content: "\f106"; }
+.flaticon-group:before { content: "\f107"; }
+.flaticon-education:before { content: "\f108"; }
+.flaticon-phone:before { content: "\f109"; }
+.flaticon-instagram:before { content: "\f10a"; }
+.flaticon-list:before { content: "\f10b"; }
+.flaticon-content:before { content: "\f10c"; }
+.flaticon-business-and-finance:before { content: "\f10d"; }
+.flaticon-boss:before { content: "\f10e"; }
+.flaticon-businessman:before { content: "\f10f"; }
+.flaticon-system:before { content: "\f110"; }
+.flaticon-businessman-1:before { content: "\f111"; }
+.flaticon-team:before { content: "\f112"; }
+.flaticon-team-1:before { content: "\f113"; }
+.flaticon-star:before { content: "\f114"; }
+.flaticon-boss-1:before { content: "\f115"; }
+.flaticon-businessman-2:before { content: "\f116"; }
+.flaticon-work:before { content: "\f117"; }
+.flaticon-search:before { content: "\f118"; }
+.flaticon-salesman:before { content: "\f119"; }
+.flaticon-businessman-3:before { content: "\f11a"; }
+.flaticon-businessman-4:before { content: "\f11b"; }
+.flaticon-newspaper:before { content: "\f11c"; }
+.flaticon-radio:before { content: "\f11d"; }
+.flaticon-sick:before { content: "\f11e"; }

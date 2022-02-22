@@ -1,0 +1,17 @@
+<div *ngIf="formGroup" [formGroup]="formGroup">
+    <mat-form-field class="w-100">
+        <input matInput placeholder="Tên danh mục bệnh" formControlName="name">
+    </mat-form-field>
+    <mat-form-field class="w-100">
+        <input matInput placeholder="Mô tả" formControlName="description">
+    </mat-form-field>
+    <mat-form-field class="w-100">
+        <mat-select placeholder="Danh mục" formControlName="categories" multiple="true">
+            <mat-option *ngFor="let category of categories$ | async" [value]="category.id">
+                {{category.name}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+
+</div>

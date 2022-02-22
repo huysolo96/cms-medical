@@ -1,0 +1,102 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 06/07/2019 11:52
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-heart:before { content: "\f100"; }
+.flaticon-medical:before { content: "\f101"; }
+.flaticon-medicine:before { content: "\f102"; }
+.flaticon-heart-1:before { content: "\f103"; }
+.flaticon-brain:before { content: "\f104"; }
+.flaticon-scope:before { content: "\f105"; }
+.flaticon-pet:before { content: "\f106"; }
+.flaticon-group:before { content: "\f107"; }
+.flaticon-education:before { content: "\f108"; }
+.flaticon-phone:before { content: "\f109"; }
+.flaticon-instagram:before { content: "\f10a"; }
+.flaticon-list:before { content: "\f10b"; }
+.flaticon-content:before { content: "\f10c"; }
+.flaticon-business-and-finance:before { content: "\f10d"; }
+.flaticon-boss:before { content: "\f10e"; }
+.flaticon-businessman:before { content: "\f10f"; }
+.flaticon-system:before { content: "\f110"; }
+.flaticon-businessman-1:before { content: "\f111"; }
+.flaticon-team:before { content: "\f112"; }
+.flaticon-team-1:before { content: "\f113"; }
+.flaticon-star:before { content: "\f114"; }
+.flaticon-boss-1:before { content: "\f115"; }
+.flaticon-businessman-2:before { content: "\f116"; }
+.flaticon-work:before { content: "\f117"; }
+.flaticon-search:before { content: "\f118"; }
+.flaticon-salesman:before { content: "\f119"; }
+.flaticon-businessman-3:before { content: "\f11a"; }
+.flaticon-businessman-4:before { content: "\f11b"; }
+.flaticon-newspaper:before { content: "\f11c"; }
+.flaticon-radio:before { content: "\f11d"; }
+.flaticon-sick:before { content: "\f11e"; }
+    
+    $font-Flaticon-heart: "\f100";
+    $font-Flaticon-medical: "\f101";
+    $font-Flaticon-medicine: "\f102";
+    $font-Flaticon-heart-1: "\f103";
+    $font-Flaticon-brain: "\f104";
+    $font-Flaticon-scope: "\f105";
+    $font-Flaticon-pet: "\f106";
+    $font-Flaticon-group: "\f107";
+    $font-Flaticon-education: "\f108";
+    $font-Flaticon-phone: "\f109";
+    $font-Flaticon-instagram: "\f10a";
+    $font-Flaticon-list: "\f10b";
+    $font-Flaticon-content: "\f10c";
+    $font-Flaticon-business-and-finance: "\f10d";
+    $font-Flaticon-boss: "\f10e";
+    $font-Flaticon-businessman: "\f10f";
+    $font-Flaticon-system: "\f110";
+    $font-Flaticon-businessman-1: "\f111";
+    $font-Flaticon-team: "\f112";
+    $font-Flaticon-team-1: "\f113";
+    $font-Flaticon-star: "\f114";
+    $font-Flaticon-boss-1: "\f115";
+    $font-Flaticon-businessman-2: "\f116";
+    $font-Flaticon-work: "\f117";
+    $font-Flaticon-search: "\f118";
+    $font-Flaticon-salesman: "\f119";
+    $font-Flaticon-businessman-3: "\f11a";
+    $font-Flaticon-businessman-4: "\f11b";
+    $font-Flaticon-newspaper: "\f11c";
+    $font-Flaticon-radio: "\f11d";
+    $font-Flaticon-sick: "\f11e";

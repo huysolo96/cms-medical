@@ -1,0 +1,18 @@
+<mat-drawer-container>
+  <mat-drawer mode="side" opened style="width: 255px;">
+    <div class="secondary-bg-color mat-elevation-z1">
+      <div class="logo" fxLayoutAlign="center center">
+        CMS
+      </div>
+      <app-sidebar></app-sidebar>
+    </div>
+  </mat-drawer>
+  <mat-drawer-content style="position: relative">
+    <!-- <mat-progress-bar style="position: absolute" mode="indeterminate">
+    </mat-progress-bar> -->
+    <app-header></app-header>
+    <div class="content-body p-2">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>

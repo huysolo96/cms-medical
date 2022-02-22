@@ -1,0 +1,27 @@
+<div *ngIf="formGroup" [formGroup]="formGroup">
+    <mat-form-field class="w-100">
+        <input matInput placeholder="Tên bài viết" formControlName="name">
+    </mat-form-field>
+    <mat-form-field class="w-100">
+        <textarea matInput placeholder="Mô tả" formControlName="description"></textarea>
+    </mat-form-field>
+    <mat-form-field class="w-100" appFormUpload>
+        <input matInput placeholder="Hình nền" formControlName="thumbnail">
+        <button matSuffix mat-icon-button color="primary" appUpload><mat-icon>cloud_upload</mat-icon></button>
+    </mat-form-field>
+    <mat-form-field class="w-100">
+        <mat-select placeholder="Danh mục" formControlName="categories" multiple="true">
+            <mat-option *ngFor="let category of categories$ | async" [value]="category.id">
+                {{category.name}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <h6>
+        Nội dung bài viết
+    </h6>
+    <div class="content-container">
+        <quill-editor placeholder="Điền nội dung bài viết" formControlName="content"></quill-editor>
+    </div>
+
+
+</div>

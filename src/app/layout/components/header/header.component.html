@@ -1,0 +1,23 @@
+<mat-toolbar class="toolbar-header">
+    <span>
+        {{title$ | async}}
+    </span>
+    <div class="spacer">
+    </div>
+    <button mat-button [matMenuTriggerFor]="menu">
+        <img ngxGravatar
+            [src]="(user$ | async)?.avatar"
+            size="28">
+        {{userName$ | async}}
+
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="logout()">
+            <mat-icon>power_settings_new</mat-icon>
+            <span >
+                Đăng xuất 
+            </span>
+        </button>
+    </mat-menu>
+
+</mat-toolbar>

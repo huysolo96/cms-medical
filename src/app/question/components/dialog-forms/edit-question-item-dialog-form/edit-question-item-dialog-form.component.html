@@ -1,0 +1,26 @@
+<div *ngIf="formGroup" [formGroup]="formGroup">
+    <mat-form-field class="w-100">
+        <input matInput placeholder="Câu hỏi" formControlName="question">
+    </mat-form-field>
+    <mat-form-field class="w-100">
+        <input matInput placeholder="Trả lời" formControlName="answer">
+    </mat-form-field>
+    <mat-form-field class="w-100">
+        <mat-select placeholder="Trạng thái" formControlName="status">
+            <mat-option [value]="'actived'">
+                Actived
+            </mat-option>
+            <mat-option [value]="'hidden'">
+                Deactivated
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field class="w-100">
+        <mat-select placeholder="Danh mục" formControlName="categories" multiple="true">
+            <mat-option *ngFor="let category of categories$ | async" [value]="category.id">
+                {{category.name}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+</div>

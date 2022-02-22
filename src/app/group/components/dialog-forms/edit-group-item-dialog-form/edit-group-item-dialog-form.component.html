@@ -1,0 +1,23 @@
+<div *ngIf="formGroup" [formGroup]="formGroup">
+    <mat-form-field class="w-100">
+        <input matInput placeholder="Tên danh mục nhóm" formControlName="name">
+    </mat-form-field>
+    <mat-form-field class="w-100">
+        <input matInput placeholder="Mô tả" formControlName="description">
+    </mat-form-field>
+    <mat-form-field class="w-100" appFormUpload>
+        <input matInput placeholder="Ảnh đại diện" formControlName="avatar" >
+        <button mat-button matSuffix mat-icon-button aria-label="Upload đại diện" color="primary" appUpload >
+            <mat-icon>cloud_upload</mat-icon>
+        </button>
+    </mat-form-field>
+    <mat-form-field class="w-100">
+        <mat-select placeholder="Danh mục" formControlName="categories" multiple="true">
+            <mat-option *ngFor="let category of categories$ | async" [value]="category.id">
+                {{category.name}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+
+</div>

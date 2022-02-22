@@ -1,0 +1,20 @@
+<button mat-button class="sidebar-button w-100" (click)="rotate()">
+  <div fxLayoutAlign="start center">
+    <div class="sidebar-button--content" fxLayoutAlign="start center" fxFlex="calc(100% - 36px)" fxLayoutGap="15px">
+      <ng-content select="[nav-icon]" class="icon-size"></ng-content>
+      <div class="text-truncate ">
+        {{label}}
+      </div>
+    </div>
+    <div fxLayoutAlign="end center" *ngIf="isGroup" [@rotatedState]="state">
+      <mat-icon>expand_less</mat-icon>
+    </div>
+    
+  </div>
+</button>
+<div [hidden]="!isGroup || state === 'rotated'">
+  <ng-content select="[nav-group]"></ng-content>
+</div>
+<!-- <div>
+  <ng-content #navGroup></ng-content>
+</div> -->

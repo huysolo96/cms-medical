@@ -1,0 +1,25 @@
+<div class="mat-loading-wrapper">
+    <mat-progress-bar *ngIf="loading$ | async" mode="indeterminate">
+    </mat-progress-bar>
+</div>
+<div class="mat-elevation-z1">
+
+    <div fxLayoutAlign="end center" class="p-2" fxLayoutGap="8px">
+        <mat-form-field >
+            <mat-select placeholder="Chọn tên danh mục" [formControl]="selectCategoryCtrl" name="category">
+                <mat-option [value]="''">
+                    Tất cả
+                </mat-option>
+                <mat-option *ngFor="let category of categories$ | async" [value]="category.id">
+                    {{category.name}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <button mat-raised-button color="primary" (click)="create()">Tạo bài viết</button>
+    </div>
+    <ag-grid-angular style="width: 100%; height: 500px;" class="ag-theme-material" [gridOptions]="gridOptions"
+        [rowData]="models$ | async">
+    </ag-grid-angular>
+    <mat-paginator >
+    </mat-paginator>
+</div>

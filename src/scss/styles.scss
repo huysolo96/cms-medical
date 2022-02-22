@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+@import '_global';
+@import '_reset';
+@import '_theme';
+@import '_variables';
+
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+
+@import "~ag-grid-community/dist/styles/ag-grid.css";
+@import "~ag-grid-community/dist/styles/ag-theme-material.css";
+

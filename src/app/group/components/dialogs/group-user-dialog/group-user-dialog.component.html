@@ -1,0 +1,22 @@
+<h1 mat-dialog-title>
+  Danh sách chuyên gia trong nhóm
+</h1>
+<div mat-dialog-content  infiniteScroll [infiniteScrollDistance]="20"
+  [infiniteScrollThrottle]="50" (scrolled)="nextPage()" [scrollWindow]="false">
+  <mat-list >
+    <mat-list-item *ngFor="let user of users$ | async">
+      <span matLine>
+        <img ngxGravatar [src]="user.avatar" size="28">
+        {{user.name}}
+      </span>
+      <button mat-icon-button appDeleteConfirm [objectName]="'người dùng trong nhóm'"
+        (confirmDelete)="removeById(user.id)" color="warn">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </mat-list-item>
+  </mat-list>
+
+</div>
+<div mat-dialog-actions fxLayoutAlign="end center">
+    <button mat-raised-button (click)="addUser()" color="primary">Thêm chuyên gia</button>
+  </div>

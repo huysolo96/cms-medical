@@ -1,0 +1,15 @@
+<div *ngIf="formGroup" [formGroup]="formGroup">
+    <mat-form-field class="w-100">
+        <input matInput placeholder="Tên đăng nhập" formControlName="name">
+    </mat-form-field>
+    <mat-form-field class="w-100">
+        <input matInput placeholder="Mô tả" formControlName="description">
+    </mat-form-field>
+    <mat-form-field class="w-100">
+        <mat-select placeholder="Các đường dẫn không cho phép" formControlName="restrictions" name="restriction" multiple="true">
+            <mat-option *ngFor="let restriction of restrictions$ | async" [value]="restriction.path" >
+                {{restriction.name}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>

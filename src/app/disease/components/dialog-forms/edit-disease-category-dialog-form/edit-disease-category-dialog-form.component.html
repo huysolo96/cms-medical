@@ -1,0 +1,8 @@
+<div *ngIf="formGroup" [formGroup]="formGroup">
+    <mat-form-field class="w-100">
+        <input matInput placeholder="Tên bệnh" formControlName="name">
+    </mat-form-field>
+    <mat-form-field class="w-100">
+        <input matInput placeholder="Mô tả" formControlName="description">
+    </mat-form-field>
+</div>

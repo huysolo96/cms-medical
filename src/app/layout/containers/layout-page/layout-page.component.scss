@@ -1,0 +1,26 @@
+@import '_variables';
+$header-height: $block-normal-size;
+$body-height: calc(100vh - #{$header-height});
+app-header {
+    display: block;
+    height: $header-height;
+}
+.logo {
+    height: $header-height;
+    font-size: 24px;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.12);
+}
+.content-size {
+    height: $body-height;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+app-sidebar {
+    @extend .content-size;
+}
+
+.content-body {
+    @extend .content-size;
+}
+

@@ -1,0 +1,29 @@
+<!-- <app-nav-button [label]="'Nhân viên'" [isGroup]="true" class="group-button">
+    <mat-icon nav-icon>dashboard</mat-icon>
+    <ng-container nav-group>
+        <app-nav-button [label]="'Danh sách nhân viên'" [routerLink]="['employee']" routerLinkActive="mat-button-active"
+            class="child-button">
+        </app-nav-button>
+        <app-nav-button [label]="'Danh sách nhân viên'" [routerLink]="['employees']" routerLinkActive="mat-button-active"
+            class="child-button">
+        </app-nav-button>
+    </ng-container>
+</app-nav-button>
+
+<app-nav-button class="group-button" [label]="'Trang chủ'" [routerLink]="['dashboard']"
+    routerLinkActive="mat-button-active">
+    <mat-icon nav-icon>dashboard</mat-icon>
+</app-nav-button> -->
+
+<!-- <app-nav-button class="group-button" [label]="'Trang chủ'" [routerLink]="['dashboard']"
+    routerLinkActive="mat-button-active">
+    <div nav-icon fxLayoutAlign="center center">
+        <mat-icon  [fontSet]="'fi'" [fontIcon]="'flaticon-heart'"></mat-icon>
+    </div>
+</app-nav-button> -->
+<ng-container *ngFor="let route of layoutRoutes">
+    <app-nav-button class="group-button" [label]="route.data.breadcrumb" [routerLink]="[route.path]"
+        routerLinkActive="mat-button-active">
+        <mat-icon nav-icon>{{route.data.matIcon}}</mat-icon>
+    </app-nav-button>
+</ng-container>
